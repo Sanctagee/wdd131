@@ -1,18 +1,22 @@
-#menu-toggle {
-    display: none;
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none;
+    }
+
+    #main-nav {
+        display: block;
+        position: static;
+        width: auto;
+    }
+
+    #main-nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-#main-nav {
-    display: block;
-    position: static;
-    width: auto;
-}
 
-#main-nav ul {
-    flex-direction: row;
-    justify-content: center;
-}
-
-.temple-grid {
-    grid-template-columns: repeat(3, 1fr);
-}
