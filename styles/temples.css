@@ -42,6 +42,7 @@ h1, h2 {
     font-size: 1.5rem;
     cursor: pointer;
     display: block;
+    color: var(--text-light);
 }
 
 #main-nav {
@@ -112,4 +113,11 @@ footer {
     color: var(--text-light);
     text-align: center;
     padding: 1rem;
+}
+.contact-btn{
+    color: var(--bg-light);
+    font-weight: bold;
+}
+.contact-btn:hover{
+    color: var(--accent-color);
 }
