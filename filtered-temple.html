@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enhanced temple picture album with filtering">
+    <meta name="author" content="Gabriel Chikwendu Nwofoke">
+    <title>Temple Filter | Gabriel Chikwendu Nwofoke</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+                <li><a href="projects.html">Final Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2 id="page-heading">Sacred Places Collection</h2>
+        <div class="temple-grid" id="temple-container">
+            <!-- Temple cards will be dynamically inserted here -->
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy;<span id="current-year"></span> ♠ Gabriel Chikwendu Nwofoke ♠ Nigeria</p>
+        <p id="last-modified">Last modified: </p>
+        <a href="mailto:gabbytech101@gmail.com?subject=Temple%20Album%20Inquiry" class="contact-btn">Contact Me</a>
+    </footer>
+    
+    <script src="scripts/filtered-temples.js" defer></script>
+</body>
+</html>
