@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Germany travel guide by Gabriel Chikwendu Nwofoke">
+    <meta name="author" content="Gabriel Chikwendu Nwofoke">
+    <meta name="keywords" content="Germany, Travel, Europe, BYU Pathway">
+    <title>Discover Germany | Gabriel Chikwendu Nwofoke</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Discover Germany</h1>
+        <!-- <button id="menu-toggle" aria-label="Toggle navigation">☰</button> -->
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="#" class="active">Germany</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Hero section -->
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/germany-default-hero-600.avif">
+                <source media="(min-width: 1200px)" srcset="images/germany-default-hero-1200.avif">
+                <img src="images/germany-default-hero.avif" alt="Neuschwanstein Castle in Germany" loading="lazy">
+            </picture>
+        </section>
+
+        <!-- Main content grid -->
+        <div class="main-grid">
+            <!-- Data Card -->
+            <section class="card data">
+                <h2>Data</h2>
+                <ul class="data-list">
+                    <li><strong>Area:</strong> 357,022 sq km</li>
+                    <li><strong>Population:</strong> 83,190,556</li>
+                    <li><strong>Capital:</strong> Berlin</li>
+                    <li><strong>Languages:</strong> German</li>
+                    <li><strong>Currency:</strong> Euro (€)</li>
+                    <li><strong>Time Zone:</strong> UTC+1 (CET)</li>
+                    <li><strong>Calling Code:</strong> +49</li>
+                    <li><strong>Internet TLD:</strong> .de</li>
+                </ul>
+            </section>
+
+            <!-- Weather Card -->
+            <section class="card weather">
+                <h2>Weather</h2>
+                <div class="weather-content">
+                    <img class="mobile-icon" src="images/weather-icon.svg" alt="Weather icon">
+                    <div>
+                        <p><strong>Temp: </strong> <span id="temp"> 18</span>°C</p>
+                        <p><strong>Conditions:</strong> Partly Cloudy</p>
+                        <p><strong>Wind:</strong> <span id="wind">12</span> km/h</p>
+                        <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Country Information Card -->
+            <section class="card">
+                <h2>Heart of Europe</h2>
+                <div class="content">
+                    <img src="images/germany-map.svg.png" alt="Germany map" loading="lazy">
+                    <p>Germany blends rich history with modern innovation, from medieval castles to cutting-edge automotive technology. The country is famous for its Oktoberfest celebrations, Christmas markets, and contributions to classical music through composers like Beethoven and Bach.</p>
+                    <p>With 16 distinct federal states, Germany offers diverse landscapes including the Bavarian Alps, Black Forest, and Baltic Sea coastlines.</p>
+                </div>
+            </section>
+
+            <!-- Culture Card -->
+            <section class="card">
+                <h2>Cultural Highlights</h2>
+                <div class="content">
+                    <img src="images/oktoberfest-culture.avif" alt="Oktoberfest celebration in Munich" loading="lazy">
+                    <div class="oktoberfest-details">
+                        <h3>Oktoberfest: The World's Largest Volksfest</h3>
+                        <p>Every September-October, Munich transforms for the legendary <strong>Oktoberfest</strong>, a 16-18 day festival attracting over 6 million visitors. Originating in 1810 to celebrate a royal wedding, it's now a global symbol of Bavarian culture.</p>
+                        
+                        <ul class="festival-facts">
+                            <li>🍻 <strong>Beer Stats:</strong> Served in 1-liter Maßkrüge (steins) from 6 major breweries meeting strict Reinheitsgebot standards</li>
+                            <li>🎪 <strong>Tents:</strong> 17 large tents (like the 8,450-seat Hofbräu-Festzelt) and 21 smaller ones</li>
+                            <li>🍗 <strong>Food:</strong> Traditional fare like Hendl (roast chicken), Schweinshaxe (pork knuckle), and giant pretzels</li>
+                            <li>👗 <strong>Attire:</strong> Locals wear Tracht - Lederhosen for men, Dirndls for women</li>
+                        </ul>
+                        
+                        <p>The festival kicks off when Munich's mayor taps the first keg, shouting "O'zapft is!" ("It's tapped!"). Highlights include the Costume Parade and amusement rides like the 48m-high Ferris wheel.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy;<span id="currentyear"></span> ♠ Gabriel Chikwendu Nwofoke ♠ Nigeria</p>
+        <p id="lastmodified">Last modified: </p>
+        <a href="mailto:gabbytech101@gmail.com?subject=Germany%20Travel%20Inquiry" class="contact-btn">Contact Me</a>
+    </footer>
+    
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>
