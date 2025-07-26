@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Chikwendu Nwofoke">
+    <meta name="description" content="AustraFavy's Cakes and Events - Custom cakes, snacks, and event planning for weddings, birthdays, and more. Order delicious treats online!">
+    <meta name="keywords" content="custom cakes, wedding cakes, birthday cakes, event planning, samosas, doughnuts, Lagos bakery, money bouquet">
+    <title>AustraFavy's Cakes and Events - Site Plan</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/Favy's Cake-logo.png" alt="AustraFavy's Cake Logo" width="100">
+        <h1>AustraFavy's Cakes and Events</h1>
+        <p>A Website Planning Document</p>
+    </header>
+
+    <main>
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <p><strong>AustraFavy's Cakes and Events</strong></p>
+            <p>This name reflects the actual brand name of a local business that specializes in cake baking and event services. It aligns with her logo and business identity.</p>
+            <p>Optional domain: <a href="#"> favyscakesandevents.com</a></p>
+        </section>
+
+        <section id="purpose">
+            <h2>Site Purpose</h2>
+            <p>The website will:</p>
+            <ul>
+                <li>Showcase custom cakes, snacks (samosas, doughnuts), and event planning services.</li>
+                <li>Allow customers to place orders via an online booking form (JavaScript-powered).</li>
+                <li>Display a gallery of past work and pricing information.</li>
+                <li>Provide contact details (phone: 09169822417) and social media links.</li>
+            </ul>
+        </section>
+
+        <section id="scenarios">
+            <h2>Scenarios (Target Audience Questions)</h2>
+            <ol>
+                <li>How do I order a custom cake for a wedding?</li>
+                <li>What snack options are available for a birthday party?</li>
+                <li>How can I order a birthday cake and get it delivered to my location?</li>
+                <li>What are your prices and delivery options for wedding cakes?</li>
+                <li>Do you have a gallery where I can see previous cake designs?</li>
+                <li>What packages are available for event planning and bridal shower decorations?</li>
+            </ol>
+        </section>
+
+        <section id="colors">
+            <h2>Color Schema</h2>
+            <div class="color-swatch" style="background-color: #c0088cff;">
+                <p>Pink Rose (#c0088cff;)</p>
+                <p>Used for headers and primary buttons</p>
+            </div>
+            <div class="color-swatch" style="background-color: #460141;">
+                <p> Chocolate Pink (#460141)</p>
+                <p>Used for accents and CTAs</p>
+            </div>
+            <div class="color-swatch" style="background-color: #ededed;">
+                <p>Light Gray (#EDEDED)</p>
+                <p>Used for backgrounds</p>
+            </div>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <p class="font-sample heading-font">Playfair Display (Headings)</p>
+            <p class="font-sample body-font">Roboto (Body Text)</p>
+        </section>
+
+        <section id="wireframe">
+            <h2>Wireframes</h2>
+            <div class="wireframe-container">
+                <h3>Mobile View</h3>
+                <img src="images/wireframe-mobile.png" alt="Mobile wireframe" loading="lazy">
+                <h3>Desktop View</h3>
+                <img src="images/wireframe-desktop.png" alt="Desktop wireframe" loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Gabriel Chikwendu Nwofoke</p>
+        <p id="lastmodified"></p>
+    </footer>
+
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastmodified').textContent = document.lastModified;
+    </script>
+</body>
+</html>
