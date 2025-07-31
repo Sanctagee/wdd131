@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted | Gabriel Chikwendu Nwofoke</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+</head>
+<body class="reviewPage">
+    <header>
+        <h1>Thank You!</h1>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="form.html">Submit Another Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="confirmation">
+        <div class="card">
+            <h2>Review Submitted Successfully</h2>
+            <p id="reviewCount">This is your first review submission.</p>
+            <p>We appreciate your feedback!</p>
+            <a href="form.html" class="btn-submit">Submit Another Review</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ♠ Gabriel Chikwendu Nwofoke ♠ Nigeria</p>
+        <p id="lastmodified">Last modified: </p>
+        <p id="day"></p>
+    </footer>
+
+    <script>
+        // To Update review counter, and save it in the localStorage
+        let count = localStorage.getItem('reviewCount') || 0;
+        count++;
+        localStorage.setItem('reviewCount', count);
+        document.getElementById('reviewCount').textContent = 
+            `You've submitted ${count} review${count !== 1 ? 's' : ''}.`;
+            
+        
+        document.addEventListener('DOMContentLoaded', ()=>{
+            // Update date/time in footer
+            const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const today = new Date();
+            const dayName = days[today.getDay()];
+
+            document.getElementById('currentyear').textContent = new Date().getFullYear();
+            document.getElementById('day').textContent = `Today is ${dayName}`;
+            document.getElementById('lastmodified').textContent += document.lastModified;
+
+            
+        });
+
+    </script>
+</body>
+</html>
