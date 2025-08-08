@@ -39,7 +39,7 @@
         count++;
         localStorage.setItem('reviewCount', count);
         document.getElementById('reviewCount').textContent = 
-            `You've submitted ${count} review${count !== 1 ? 's' : ''}.`;
+            `You've submitted <strong>${count}</strong> review${count !== 1 ? 's' : ''}.`;
             
         
         document.addEventListener('DOMContentLoaded', ()=>{
@@ -51,8 +51,6 @@
             document.getElementById('currentyear').textContent = new Date().getFullYear();
             document.getElementById('day').textContent = `Today is ${dayName}`;
             document.getElementById('lastmodified').textContent += document.lastModified;
-
-            
         });
 
     </script>

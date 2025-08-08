@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Chikwendu Nwofoke">
+    <meta name="description" content="AustraFavy's Cakes and Events - Custom cakes, snacks, and event planning for weddings, birthdays, and more. Order delicious treats online!">
+    <meta name="keywords" content="custom cakes, wedding cakes, birthday cakes, event planning, samosas, doughnuts, Lagos bakery, money bouquet">
+    <title>AustraFavy's Cakes and Events | Premium Cakes & Event Planning</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/2349169822417" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="images/favys-logo.png" alt="AustraFavy's Logo">
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <button class="btn" id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h1>Exquisite Cakes & Event Planning</h1>
+            <p>Creating unforgettable moments with custom cakes, delicious snacks, and flawless event coordination for weddings, birthdays, and special occasions.</p>
+            <div>
+                <a href="#products" class="btn">Order Now</a>
+                <a href="#contact" class="btn btn-secondary">Book Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We offer a wide range of services to make your special occasions truly memorable</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/cakes1.jpg" alt="Custom Cakes" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Custom Cakes</h3>
+                        <p>Handcrafted cakes designed to your specifications for weddings, birthdays, anniversaries, and all special occasions.</p>
+                        <a href="#contact" class="btn">Order Cake</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/bento-birthday.jpg" alt="Event Planning" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Event Planning</h3>
+                        <p>Complete event coordination services for weddings, bridal showers, corporate events, and milestone celebrations.</p>
+                        <a href="#contact" class="btn">Plan Event</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/bento-mummy.jpg" alt="Snacks & Treats" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Snacks & Treats</h3>
+                        <p>Delicious samosas, doughnuts, cupcakes, and other treats perfect for parties, corporate events, and gifts.</p>
+                        <a href="#products" class="btn">Order Snacks</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-container">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Products</h2>
+                <p>Delicious creations made with love and premium ingredients</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-icon">🎂</div>
+                    <h3>Wedding Cakes</h3>
+                    <p>Elegant multi-tiered cakes customized to match your wedding theme</p>
+                    <div class="price">From ₦75,000</div>
+                    <button class="btn add-to-cart" data-product="Wedding Cake" data-price="75000">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🧁</div>
+                    <h3>Birthday Cakes</h3>
+                    <p>Fun and creative cakes for all ages, themed to your preferences</p>
+                    <div class="price">From ₦25,000</div>
+                    <button class="btn add-to-cart" data-product="Birthday Cake" data-price="25000">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🥟</div>
+                    <h3>Samosas</h3>
+                    <p>Delicious savory pastries filled with spiced meat or vegetables</p>
+                    <div class="price">₦500 each</div>
+                    <button class="btn add-to-cart" data-product="Samosas (6 pack)" data-price="3000">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🍩</div>
+                    <h3>Doughnuts</h3>
+                    <p>Freshly made doughnuts with various glazes and toppings</p>
+                    <div class="price">₦400 each</div>
+                    <button class="btn add-to-cart" data-product="Doughnuts (6 pack)" data-price="2400">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">💐</div>
+                    <h3>Money Bouquet</h3>
+                    <p>Creative money arrangements perfect for gifts and celebrations</p>
+                    <div class="price">From ₦15,000</div>
+                    <button class="btn add-to-cart" data-product="Money Bouquet" data-price="15000">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🍰</div>
+                    <h3>Cupcakes</h3>
+                    <p>Moist cupcakes with rich buttercream frosting in various flavors</p>
+                    <div class="price">₦800 each</div>
+                    <button class="btn add-to-cart" data-product="Cupcakes (6 pack)" data-price="4800">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Gallery</h2>
+                <p>Browse our collection of beautiful cake designs and event setups</p>
+            </div>
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <img src="images/bekky-cakes.jpg" alt="Custom Birthday Cake" loading="lazy">
+                    <figcaption class="gallery-caption">Custom Birthday Cake</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/bento-birthday.jpg" alt="Birthday Bento" loading="lazy">
+                    <figcaption class="gallery-caption">Birthday Bento</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/bento-break-up.jpg" alt="Break Up Bento" loading="lazy">
+                    <figcaption class="gallery-caption">Break Up Bento</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/bento-mummy.jpg" alt="Birthday Bento for Mum" loading="lazy">
+                    <figcaption class="gallery-caption">Birthday Bento for Mum</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/cakes1.jpg" alt="Hoffy Dirtday Plumm Cake" loading="lazy">
+                    <figcaption class="gallery-caption">Hoffy Dirtday Plumm Cake</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/proposal2.jpg" alt="proposal" loading="lazy">
+                    <figcaption class="gallery-caption">Proposal</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/money-bouquet.jpg" alt="Money Bouquet" loading="lazy">
+                    <figcaption class="gallery-caption">Money Bouquet</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/cakes12.jpg" alt="Chocolate Birthday Cake" loading="lazy">
+                    <figcaption class="gallery-caption">Chocolate Birthday Cake</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="images/yummy-chinchin.jpg" alt="Yummy Chin chin" loading="lazy">
+                    <figcaption class="gallery-caption">Yummy Chin chin</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/fondant6.jpg" alt="Fondant" loading="lazy">
+                    <figcaption class="gallery-caption">Fondant</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/cakes4.jpg" alt="Child's Birthday Cake" loading="lazy">
+                    <figcaption class="gallery-caption">Child's Birthday Cake</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/cakesmothers.jpg" alt="Happy Mother's Day Cake" loading="lazy">
+                    <figcaption class="gallery-caption">Happy Mother's Day</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/well-packaged-doughnut.jpg" alt="Milky Doughnut" loading="lazy">
+                    <figcaption class="gallery-caption">Milky Doughnut</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/bestie-cakes.jpg" alt="Bestie Cakes" loading="lazy">
+                    <figcaption class="gallery-caption">Bestie Cakes</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/proposal.jpg" alt="asking-out" loading="lazy">
+                    <figcaption class="gallery-caption">Asking a Girl out</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/favys-bouquet.jpg" alt="Money Bouquet" loading="lazy">
+                    <figcaption class="gallery-caption">Money Bouquet</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/burger.png" alt="yummy burger" loading="lazy">
+                    <figcaption class="gallery-caption">Yummy Burger</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/all-in-one.jpg" alt="all-in-one" loading="lazy">
+                    <figcaption class="gallery-caption">All in one Treat</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/packaged-cupcakes15.jpg" alt="cupcakes" loading="lazy">
+                    <figcaption class="gallery-caption">Cupcakes</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/chops90.jpg" alt="chops" loading="lazy">
+                    <figcaption class="gallery-caption">Chops</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/parfait12.jpg" alt="Parfait" loading="lazy">
+                    <figcaption class="gallery-caption">Delicious Parfait</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/peanuts1.jpg" alt="Munchy peanuts" loading="lazy">
+                    <figcaption class="gallery-caption">Munchy Peanuts</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/meatpie-chops.jpg" alt="meatpie" loading="lazy">
+                    <figcaption class="gallery-caption">Meatpie</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/bento-satisfied.jpg" alt="Satisfied cravings" loading="lazy">
+                    <figcaption class="gallery-caption">Cravings Satisfied</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/chops3.jpg" alt="Savoury Chops" loading="lazy">
+                    <figcaption class="gallery-caption">Savoury Chops</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/smoothie.jpg" alt="Smoothie" loading="lazy">
+                    <figcaption class="gallery-caption">Smoothie and Onochie</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/graduates2.jpg" alt="graduating class" loading="lazy">
+                    <figcaption class="gallery-caption">Graduating class</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/buns1.jpg" alt="buns" loading="lazy">
+                    <figcaption class="gallery-caption">Buns</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/meatpie2.jpg" alt="Meatpie" loading="lazy">
+                    <figcaption class="gallery-caption">Meatpie chops</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/fontant9.jpg" alt="fondant-cake" loading="lazy">
+                    <figcaption class="gallery-caption">Fondant cake</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/lovely-bento.png" alt="all-in-one" loading="lazy">
+                    <figcaption class="gallery-caption">Lovely Bento Cake</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/val3.jpg" alt="all-in-one" loading="lazy">
+                    <figcaption class="gallery-caption">Valentine Pack</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/lovely-cake.jpg" alt="all-in-one" loading="lazy">
+                    <figcaption class="gallery-caption">All in one Treat</figcaption>
+                </figure>  
+
+                <figure class="gallery-item">
+                    <img src="images/money-tower.jpg" alt="money-tower" loading="lazy">
+                    <figcaption class="gallery-caption">Money Tower</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/nneomacake.jpg" alt="nneomacake" loading="lazy">
+                    <figcaption class="gallery-caption">Mothering Sunday Cake</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/best-bento.jpg" alt="best-bento" loading="lazy">
+                    <figcaption class="gallery-caption">Best Bento Cake</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/graduates3.jpg" alt="graduates" loading="lazy">
+                    <figcaption class="gallery-caption">Graduates</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/divorced-cakes.jpg" alt="divorced-cake" loading="lazy">
+                    <figcaption class="gallery-caption">Divorced</figcaption>
+                </figure>
+                
+                <figure class="gallery-item">
+                    <img src="images/proposal3.jpg" alt="cupcake proposal" loading="lazy">
+                    <figcaption class="gallery-caption">Cupcakes proposal</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/fondant-cakes.jpg" alt="Traditional Fondant cake" loading="lazy">
+                    <figcaption class="gallery-caption">Traditional Fondant</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/cakes10.png" alt="ceo-herself" loading="lazy">
+                    <figcaption class="gallery-caption">CEO</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/bento-toast.jpg" alt="toast-bento" loading="lazy">
+                    <figcaption class="gallery-caption">Toast Bento cake</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/cakes5.jpg" alt="yumm-butter-cake" loading="lazy">
+                    <figcaption class="gallery-caption">Yummy Butter cake</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/cakesndinne.jpg" alt="mothers day" loading="lazy">
+                    <figcaption class="gallery-caption">Mothers Day</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/fondant3.jpg" alt="fondant" loading="lazy">
+                    <figcaption class="gallery-caption">Fondant</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/meatpies1.jpg" alt="meatpie" loading="lazy">
+                    <figcaption class="gallery-caption">Meatpie</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/val-well-packed.jpg" alt="val-well-packed" loading="lazy">
+                    <figcaption class="gallery-caption">Val package</figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/valpackages2.jpg" alt="valpackages" loading="lazy">
+                    <figcaption class="gallery-caption">Valentine Packages</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-container">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>What our customers say about our cakes and services</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial active" id="testimonial1">
+                    <div class="testimonial-content">
+                        "AustraFavy created the most beautiful fondant wedding cake for our special day! Not only was it stunning, but it tasted incredible. Our guests couldn't stop raving about it. The attention to detail was beyond our expectations."
+                    </div>
+                    <div class="testimonial-author">- Oluchi & Paschal, Abuja</div>
+                </div>
+                <div class="testimonial" id="testimonial2">
+                    <div class="testimonial-content">
+                        "I've ordered birthday cakes from AustraFavy for my children for the past three years. Each cake has been more amazing than the last! The flavors are delicious, and the designs are always perfect. Highly recommend!"
+                    </div>
+                    <div class="testimonial-author">- Mrs. Nwebonyi, Abakaliki</div>
+                </div>
+                <div class="testimonial" id="testimonial3">
+                    <div class="testimonial-content">
+                        "The samosas, burgers, and doughnuts from AustraFavy were the highlight of our corporate event. They arrived fresh and delicious, and the presentation was beautiful. We'll definitely be ordering again for our next company gathering."
+                    </div>
+                    <div class="testimonial-author">- Mr. Okonkwo, HR Manager (Sin City Club, Mile 50 Abakaliki)</div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn" id="prevTestimonial">❮</button>
+                    <button class="testimonial-btn" id="nextTestimonial">❯</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-container">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch to place orders or inquire about our services</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>Behind Remand Home, Ugwu Achara, Abakaliki</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Phone Number</h3>
+                            <p>+234 916 982 2417</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h3>Email Address</h3>
+                            <p>gabbytech101@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <h3>Working Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 7:00 PM</p>
+                            <p>Saturday: 9:00 AM - 5:00 PM</p>
+                            <p>Sunday: Closed (Special orders only)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🚚</div>
+                        <div>
+                            <h3>Delivery Information</h3>
+                            <p>We offer delivery within Ebonyi State, and beyond. Delivery fees start at ₦1,500 depending on location. Orders require 48 hours notice.</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div>
+                            <h3>WhatsApp Ordering</h3>
+                            <p>Order directly via WhatsApp for faster service and responses!</p>
+                            <a href="https://wa.me/2349169822417" class="btn whatsapp-btn" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Place Your Order</h3>
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <label for="name" class="required">Full Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="required">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="required">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="event" class="required">Event Type</label>
+                            <select id="event" class="form-control" required>
+                                <option value="">Select Event Type</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="matric">Matriculation</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="sign-out">Graduation/Sign-out</option>
+                                <option value="convocation">Convocation</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date" class="required">Event Date</label>
+                            <input type="date" id="date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="orderDetails" class="required">Order Details</label>
+                            <textarea id="orderDetails" class="form-control" required placeholder="Please describe what you'd like to order (cake type, size, flavors, design ideas, etc.)"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Submit Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>AustraFavy's Cakes</h3>
+                    <p>Creating sweet memories with exquisite cakes and flawless event planning since 2015.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/2349169822417" class="social-link whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Our Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Wedding Cakes</a></li>
+                        <li><a href="#">Birthday Cakes</a></li>
+                        <li><a href="#">Samosas & Doughnuts</a></li>
+                        <li><a href="#">Cupcakes</a></li>
+                        <li><a href="#">Money Bouquets</a></li>
+                        <li><a href="#">Event Planning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li>Behind Remand Home, Ugwu Achara</li>
+                        <li>Abakaliki, Nigeria</li>
+                        <li>+234 916 982 2417</li>
+                        <li>gabbytech101@gmail.com</li>
+                    </ul>
+                    <a href="https://wa.me/2349169822417" class="btn whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Order
+                    </a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> AustraFavy's Cakes and Events. All Rights Reserved. | <a href="references.html">References</a></p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="modal-overlay" id="cartOverlay"></div>
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+            <button id="closeCartBtn">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be populated here -->
+            <div class="empty-cart-message" style="text-align: center; padding: 2rem; color: #666;">
+                <p>Your cart is empty</p>
+                <p>Add some delicious cakes and treats!</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">₦0.00</span>
+            </div>
+            <button class="btn" id="whatsappCheckout" style="width: 100%;">
+                <i class="fab fa-whatsapp"></i> Checkout via WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
